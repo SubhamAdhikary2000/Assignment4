@@ -2,39 +2,38 @@
 using namespace std;
 int main()
 {
-   //Here are the required declarations with initialization:
 
 //Pointer to a character:
    char ch = 'A';
    char* ptrToChar = &ch;
 
 //Array of 10 integers:**
-   int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+   int arr[10] = {10, 21, 42, 35, 84, 75, 46, 27, 8, 59};
 
 //Reference to an array of 10 integers:**
-   int (&refToArray)[10] = arr;
+   int (&RefToArray)[10] = arr;
 
-//Pointer to an array of character strings:**
-   const char* strArray[] = {"Hello", "World", "C++"};
-   const char** ptrToStrArray = strArray;
+//Pointer to an array of character strings:
+   const char* StrArray[] = {"WELCOME", "TO", "IACS"};
+   const char** PtrToStrArray = StrArray;
 
-//Pointer to a pointer to a character:**
-   char* ptrToChar2 = &ch;
-   char** ptrToPtrToChar = &ptrToChar2;
+//Pointer to a pointer to a character:
+   char* PtrToCharacter = &ch;
+   char** PtrToPtrToCharacter = &PtrToCharacter;
 
-//Constant integer:**
-   const int constInt = 42;
+//Constant integer:
+   const int ConstInt = 42;
 
-//Pointer to a constant integer:**
-   const int* ptrToConstInt = &constInt;
+//Pointer to a constant integer:
+   const int* PtrToConstInt = &ConstInt;
 
-//Constant pointer to an integer:**
+//Constant pointer to an integer:
    int num = 10;
-   int* const constPtrToInt = &num;
+   int* const ConstPtrToInt = &num;
 
-//Constant pointer to a constant double:**
-   const double constDouble = 3.14;
-   const double* const constPtrToConstDouble = &constDouble;
+//Constant pointer to a constant double:
+   const double ConstDouble = 3.14;
+   const double* const ConstPtrToConstDouble = &ConstDouble;
 
 //Each variable is initialized with appropriate values or references.
 }
